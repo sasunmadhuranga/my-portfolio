@@ -49,7 +49,7 @@ export default function Landing() {
 
       <div className="mt-6 flex gap-6">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/sasunmadhuranga"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
@@ -58,7 +58,7 @@ export default function Landing() {
           <span className="sr-only">GitHub</span>
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/sasun-madhuranga/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-300"
