@@ -27,7 +27,7 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-gradient-to-r from-blue-800 via-indigo-800 to-violet-700 w-full">
+        <div className="md:hidden bg-gradient-to-r from-gray-800 via-slate-800 to-indigo-950 w-full">
             <ul className="flex flex-col items-center gap-4 py-4">
             <li><a href="#about" className="text-gray-100 hover:text-gray-300" onClick={() => setIsOpen(false)}>About</a></li>
             <li><a href="#projects" className="text-gray-100 hover:text-gray-300" onClick={() => setIsOpen(false)}>Projects</a></li>
