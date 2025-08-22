@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-gradient-to-r from-gray-800 via-slate-800 to-indigo-950">
       <div className="flex justify-between items-center px-5 py-4 max-w-7xl mx-auto">
-        <h1 className="text-2xl font-bold text-gray-100">My Portfolio</h1>
+        <h1 className="text-2xl font-bold text-gray-100">Portfolio</h1>
 
         <ul className="hidden md:flex gap-6">
           <li><a href="#about" className="text-gray-100 hover:text-gray-300">About</a></li>

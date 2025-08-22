@@ -11,7 +11,7 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("https://formspree.io/f/your_form_id", {
+    const res = await fetch("https://formspree.io/f/xvgqepvl", {
       method: "POST",
       headers: {
         Accept: "application/json",
