@@ -6,6 +6,32 @@ import Image from "next/image";
 export default function Projects() {
   const projects = [
     {
+      title: "AI Chatbot Development and Deployment with IBM watsonx Assistant",
+      images:[
+        "/assets/chatbot/1.png",
+        "/assets/chatbot/2.png",
+        "/assets/chatbot/3.png",
+        "/assets/chatbot/4.png",
+      ],
+      summary:
+        "Developed an intelligent virtual assistant using IBM watsonx Assistant, capable of engaging users in natural conversations, answering FAQs about store locations and hours, and providing personalized flower recommendations based on the occasion and recipient. The chatbot uses conditional logic with follow-up questions for special scenarios and delivers tailored responses. Deployed the fully functional AI chatbot on a WordPress site, enhancing user engagement and providing automated support tailored to user needs.",
+      features: [
+        "Handled chit-chat, store locations, hours of operation, and flower recommendations using dynamic conversational flows.",
+        "Implemented logic to adjust flower suggestions based on user input (occasion type and relationship context).",
+        "Used session and action variables to manage conversation states and personalize responses.",
+        "Utilized Draft and Live environments for safe development, testing, and production deployment.",
+        "Deployed chatbot on a WordPress site using the IBM watsonx Assistant plugin, including full UI customization.",
+        "Designed a user-friendly interaction flow that mimics natural human conversation and decision-making.",
+      ],
+      tech: [
+        "IBM Cloud",
+        "IBM watsonx Assistant",
+        "WordPress",
+        "JavaScript",
+        "API",
+      ],
+    },
+    {
       title: "Instagram Clone",
       images: [
         "/assets/insta/1.png",
