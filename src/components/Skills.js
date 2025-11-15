@@ -1,6 +1,6 @@
 export default function Skills() {
   const skills = {
-    Languages: ["JavaScript", "Python", "PHP", "Java", "HTML", "CSS", "SQL"],
+    Languages: ["JavaScript", "TypeScript", "Python", "PHP", "Java", "HTML", "CSS", "SQL"],
     Frameworks: ["React.js", "Node.js", "Express.js", "Next.js", "Tailwind CSS", "Rasa"],
     Databases: ["MongoDB", "MySQL"],
     Tools: [
