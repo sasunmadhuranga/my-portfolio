@@ -6,6 +6,48 @@ import Image from "next/image";
 export default function Projects() {
   const projects = [
     {
+      title: "MERN Volunteer Management Platform (Web & Mobile)",
+      images:[
+        "/assets/volunteer/1.png",
+        "/assets/volunteer/2.png",
+        "/assets/volunteer/3.png",
+        "/assets/volunteer/4.png",
+        "/assets/volunteer/5.png",
+        "/assets/volunteer/6.png",
+        "/assets/volunteer/7.png",
+        "/assets/volunteer/8.png",
+        "/assets/volunteer/9.png",
+        "/assets/volunteer/10.png",
+        "/assets/volunteer/11.png",
+        "/assets/volunteer/12.png",
+        "/assets/volunteer/13.png",
+        "/assets/volunteer/14.png",
+        "/assets/volunteer/15.png",
+      ],
+      summary:
+        "Developed a full-stack MERN-based volunteer management platform with an integrated React Native mobile application to streamline event management, volunteer management, attendance tracking, and certificate generation. The system supports role-based access for Super Admins, Organization Admins, and Volunteers, enabling secure event workflows and accurate attendance tracking using time-bound QR codes. The platform ensures data integrity, scalability, and a seamless experience across web and mobile.",
+      features: [
+        "Implemented role-based access control for Super Admins, Organization Admins, and Volunteers.",
+        "Enabled organizations to create and manage events, and approve volunteer applications.",
+        "Developed a secure QR-based attendance system with daily, time-bound tokens for check-in and check-out.",
+        "Validated attendance against event dates, time windows, approval status, and QR token expiration to prevent misuse.",
+        "Built dynamic certificate generation with reusable templates and placeholders for volunteer and event details.",
+        "Allowed eligible volunteers to generate certificates after meeting minimum participation requirements.",
+        "Provided volunteers with event discovery, application tracking, attendance history, and certificate access.",
+        "Integrated JWT authentication and RESTful APIs for secure and scalable backend communication.",
+        "Designed responsive, modern user interfaces for both web and mobile platforms.",
+      ],
+      tech: [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "React Native (Expo)",
+        "JWT Authentication",
+        "RESTful APIs",
+      ],
+    },
+    {
       title: "AI Chatbot Development and Deployment with IBM watsonx Assistant",
       images:[
         "/assets/chatbot/1.png",
