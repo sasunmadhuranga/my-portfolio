@@ -46,7 +46,7 @@ export default function Projects() {
         "JWT Authentication",
         "RESTful APIs",
       ],
-      link: "https://mern-volunteer-platform.vercel.app/",
+      applink: "https://mern-volunteer-platform.vercel.app/",
       videos: ["https://drive.google.com/file/d/1J6ZxjWaSYpL3IrO8ECzK0_fkupN0CQtb/view?usp=sharing",
               "https://drive.google.com/file/d/1DtJnhXVIP3SIMmb_wwvptmGdCPkgVgaX/view?usp=sharing",
       ],
@@ -109,7 +109,7 @@ export default function Projects() {
         "JWT",
         "REST APIs",
       ],
-      applink: "https://github.com/sasunmadhuranga/instagram-clone-app",
+      link: "https://github.com/sasunmadhuranga/instagram-clone-app",
       video: "https://drive.google.com/file/d/1_ZLObQCkDT8SROI8D-M2bB6YLGngR_uG/view?usp=drive_link",
     },
 
@@ -267,8 +267,8 @@ export default function Projects() {
               href={project.applink}
               target='_blank'
               rel="noopener noreferrer"
-              className='block text-sm text-sky-400 hover:underline pt-5'>
-                Check out the web app
+              className='block text-sm text-sky-500 hover:underline pt-5'>
+                Check out the Web App
               </a>
           )}
 
