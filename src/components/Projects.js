@@ -109,7 +109,7 @@ export default function Projects() {
         "JWT",
         "REST APIs",
       ],
-      link: "https://github.com/sasunmadhuranga/instagram-clone-app",
+      applink: "https://github.com/sasunmadhuranga/instagram-clone-app",
       video: "https://drive.google.com/file/d/1_ZLObQCkDT8SROI8D-M2bB6YLGngR_uG/view?usp=drive_link",
     },
 
@@ -262,13 +262,13 @@ export default function Projects() {
               <span className="text-gray-200">GitHub</span>
             </a>
           )}
-          {project.link && (
+          {project.applink && (
             <a 
-              href={project.link}
+              href={project.applink}
               target='_blank'
               rel="noopener noreferrer"
-              className='block text-sm text-gray-200 hover: underline pt-5'>
-                Chekout the Web App
+              className='block text-sm text-sky-400 hover:underline pt-5'>
+                Check out the web app
               </a>
           )}
 
