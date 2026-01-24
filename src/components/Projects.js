@@ -46,7 +46,11 @@ export default function Projects() {
         "JWT Authentication",
         "RESTful APIs",
       ],
-      video: "https://drive.google.com/file/d/1J6ZxjWaSYpL3IrO8ECzK0_fkupN0CQtb/view?usp=sharing",
+      link: "https://mern-volunteer-platform.vercel.app/",
+      videos: ["https://drive.google.com/file/d/1J6ZxjWaSYpL3IrO8ECzK0_fkupN0CQtb/view?usp=sharing",
+              "https://drive.google.com/file/d/1DtJnhXVIP3SIMmb_wwvptmGdCPkgVgaX/view?usp=sharing",
+      ],
+      
     },
     {
       title: "AI Chatbot Development and Deployment with IBM watsonx Assistant",
@@ -215,12 +219,11 @@ export default function Projects() {
                       alt={`${project.title} screenshot ${i + 1}`}
                       width={800}
                       height={400}
-                      className="rounded-lg object-cover w-full height-[600px]"
+                      className="rounded-lg object-cover w-full h-[600px]"
                     />
                   ))}
                 </Slider>
               )}
-
 
               {project.summary && (
                 <p className="text-gray-200 mb-3 text-justify">
@@ -259,17 +262,28 @@ export default function Projects() {
               <span className="text-gray-200">GitHub</span>
             </a>
           )}
-
-          {project.video && (
-            <a
-              href={project.video}
-              target="_blank"
+          {project.link && (
+            <a 
+              href={project.link}
+              target='_blank'
               rel="noopener noreferrer"
-              className="block text-sm text-gray-200 hover:underline pt-5"
-            >
-              ▶ Watch Demo
-            </a>
+              className='block text-sm text-gray-200 hover: underline pt-5'>
+                Chekout the Web App
+              </a>
           )}
+
+          {project.videos?.map((video, i) => (
+              <a
+                key={i}
+                href={video}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm text-gray-200 hover:underline pt-2"
+              >
+                ▶ Watch Demo {i + 1}
+              </a>
+            ))}
+
 
           </div>
         ))}
