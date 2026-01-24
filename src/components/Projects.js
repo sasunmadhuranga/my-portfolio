@@ -110,7 +110,7 @@ export default function Projects() {
         "REST APIs",
       ],
       link: "https://github.com/sasunmadhuranga/instagram-clone-app",
-      videos: "https://drive.google.com/file/d/1_ZLObQCkDT8SROI8D-M2bB6YLGngR_uG/view?usp=drive_link",
+      videos: ["https://drive.google.com/file/d/1_ZLObQCkDT8SROI8D-M2bB6YLGngR_uG/view?usp=drive_link",]
     },
 
     {
