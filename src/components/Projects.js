@@ -25,7 +25,7 @@ export default function Projects() {
         "/assets/volunteer/15.png",
       ],
       summary:
-        "Developed a full-stack MERN-based volunteer management platform with an integrated React Native mobile application to streamline event management, volunteer management, attendance tracking, and certificate generation. The system supports role-based access for Super Admins, Organization Admins, and Volunteers, enabling secure event workflows and accurate attendance tracking using time-bound QR codes. The platform ensures data integrity, scalability, and a seamless experience across web and mobile.",
+        "Developed a full-stack MERN-based volunteer management platform with an integrated React Native mobile application to streamline event management, volunteer management, attendance tracking, and certificate generation. The system supports role-based access for Super Admins, Organization Admins, and Volunteers, enabling secure event workflows and accurate attendance tracking using time-bound QR codes. The platform ensures data integrity, scalability, and a seamless experience across web and mobile. Deployed the frontend on Vercel, backend APIs on Render, utilized MongoDB Atlas for cloud-hosted data storage, and integrated Cloudinary for secure image and file management.",
       features: [
         "Implemented role-based access control for Super Admins, Organization Admins, and Volunteers.",
         "Enabled organizations to create and manage events, and approve volunteer applications.",
@@ -46,6 +46,7 @@ export default function Projects() {
         "JWT Authentication",
         "RESTful APIs",
       ],
+      video: "https://drive.google.com/file/d/1J6ZxjWaSYpL3IrO8ECzK0_fkupN0CQtb/view?usp=sharing",
     },
     {
       title: "AI Chatbot Development and Deployment with IBM watsonx Assistant",
