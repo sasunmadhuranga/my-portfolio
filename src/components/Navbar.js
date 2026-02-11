@@ -12,6 +12,7 @@ export default function Navbar() {
 
         <ul className="hidden md:flex gap-6">
           <li><a href="#about" className="text-gray-100 hover:text-gray-300">About</a></li>
+          <li><a href="#experience" className="text-gray-100 hover:text-gray-300">Experience</a></li>
           <li><a href="#projects" className="text-gray-100 hover:text-gray-300">Projects</a></li>
           <li><a href="#skills" className="text-gray-100 hover:text-gray-300">Skills</a></li>
           <li><a href="#contact" className="text-gray-100 hover:text-gray-300">Contact</a></li>
@@ -30,6 +31,7 @@ export default function Navbar() {
         <div className="md:hidden bg-gradient-to-r from-gray-800 via-slate-800 to-indigo-950 w-full">
             <ul className="flex flex-col items-center gap-4 py-4">
             <li><a href="#about" className="text-gray-100 hover:text-gray-300" onClick={() => setIsOpen(false)}>About</a></li>
+            <li><a href="#about" className="text-gray-100 hover:text-gray-300" onClick={() => setIsOpen(false)}>Experience</a></li>
             <li><a href="#projects" className="text-gray-100 hover:text-gray-300" onClick={() => setIsOpen(false)}>Projects</a></li>
             <li><a href="#skills" className="text-gray-100 hover:text-gray-300" onClick={() => setIsOpen(false)}>Skills</a></li>
             <li><a href="#contact" className="text-gray-100 hover:text-gray-300" onClick={() => setIsOpen(false)}>Contact</a></li>

@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Experience() {
   return (
     <section className="min-h-screen bg-gradient-to-r from-gray-800 via-slate-800 to-indigo-950 py-16 px-8 md:px-20 lg:px-40">
-      <div className="max-w-5xl mx-auto text-gray-100">
+      <div className="max-w-5xl mx-auto text-gray-100 mt-15">
         
         <h2 className="text-3xl font-bold mb-8 text-center">Experience</h2>
 

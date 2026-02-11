@@ -1,35 +1,49 @@
 export default function Skills() {
   const skills = {
-    Languages: ["JavaScript", "TypeScript", "Python", "PHP", "Java", "HTML", "CSS", "SQL"],
-    Frameworks: ["React.js", "React Native","Node.js", "Express.js", "Next.js", "Tailwind CSS", "Rasa"],
+    "Programming Languages": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Java",
+      "PHP",
+      "SQL",
+    ],
+
+    "Frontend & Mobile": [
+      "React.js",
+      "Next.js",
+      "React Native",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+    ],
+    "Backend & APIs": [
+      "Node.js",
+      "Express.js",
+      "RESTful APIs",
+      "API Integration",
+      "Rasa",
+    ],
     Databases: ["MongoDB", "MySQL"],
-    Tools: [
+
+    "Cloud & DevOps": [
+      "AWS",
+      "Microsoft Azure",
+      "IBM Cloud",
       "Git",
       "GitHub",
       "GitHub Actions",
-      "JWT",
-      "AWS",
-      "Azure",
-      "IBM Cloud",
-      "Postman",
       "Docker",
-      "Kubernetes",
-      "Google Analytics",
-      "Adobe Premiere Pro",
-      "Adobe Photoshop",
-      "Adobe After Effects",
-    ],
-    Other: [
-      "Linux",
-      "RESTful APIs",
-      "API Integration",
-      "Authentication",
-      "OOP",
-      "UI/UX",
       "CI/CD",
+      "Linux",
+    ],
+    
+    "Security & Architecture": [
+      "JWT",
+      "Role-Based Access Control",
       "Microservices",
-      "SEO",
-      "Android Development",
+      "OOP",
+      "MVC Architecture",
     ],
   };
 
