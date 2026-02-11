@@ -19,11 +19,13 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-lg leading-relaxed ">
             I’m <span className="font-semibold">Sasun Madhuranga</span>, a recent
-            <span className="text-blue-300"> B.Sc. in IT graduate </span> passionate
-            about building responsive and scalable web applications. I specialize in
-            the <span className="font-semibold">MERN stack (MongoDB, Express, React, Node.js)</span>
+            <span className="text-blue-300"> B.Sc. in IT graduate (GPA: 3.64)</span>,
+            honored on the <span className="font-semibold">Dean’s List (3.81 GPA)</span> in my final semester.
+            I’m passionate about building AI-powered, responsive, and scalable web applications.
+            I specialize in the <span className="font-semibold">MERN stack (MongoDB, Express, React, Node.js)</span>
             and enjoy creating user-friendly interfaces and full-stack solutions.
           </p>
+
           <p className="mt-4 text-lg leading-relaxed">
              My goal is to contribute to impactful projects, continuously learn new technologies, and grow as a well-rounded developer. Outside of coding, I enjoy exploring new tools, designing graphics, editing videos, and staying updated with the latest tech trends.
           </p>
