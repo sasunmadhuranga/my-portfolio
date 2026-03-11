@@ -10,7 +10,8 @@ export default function Projects() {
       images: [
         "/assets/2048/1.png",
         "/assets/2048/2.png",
-        "/assets/2048/3.png"
+        "/assets/2048/3.png",
+        "/assets/2048/4.png",
       ],
       summary:
         "Developed and deployed a React-based 2048 game using a fully automated CI/CD pipeline on Amazon Web Services. The application was containerized with Docker and deployed using Amazon Elastic Container Service (ECS) with images stored in Amazon Elastic Container Registry (ECR). Implemented an automated pipeline with AWS CodePipeline and AWS CodeBuild to build, push, and deploy updated container images whenever code changes are pushed to the repository, enabling continuous integration and continuous deployment in a scalable cloud environment.",
@@ -38,7 +39,7 @@ export default function Projects() {
         "DevOps"
       ],
       videos: [
-        "https://drive.google.com/..."
+        "https://drive.google.com/file/d/191b1qULHQAGC1c8OizygoQbK93F1qzSt/view?usp=sharing"
       ],
     },
     {
