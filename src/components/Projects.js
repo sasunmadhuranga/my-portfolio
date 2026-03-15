@@ -6,6 +6,49 @@ import Image from "next/image";
 export default function Projects() {
   const projects = [
     {
+      title: "AI German Language Learning Chatbot (AWS CI/CD Deployment)",
+      images:[
+        "/assets/language/1.png",
+        "/assets/language/2.png",
+        "/assets/language/3.png",
+        "/assets/language/4.png",
+        "/assets/language/5.png",
+        "/assets/language/6.png",
+        "/assets/language/7.png",
+        "/assets/language/8.png",
+        "/assets/language/9.png",
+        "/assets/language/10.png"
+      ],
+      summary:
+        "Developed and deployed an AI-powered German language learning chatbot designed for beginner (A1) learners to practice conversational German with real-time grammar feedback. The system integrates a React-based chatbot interface with a FastAPI backend that performs grammar correction and generates AI teacher responses using the Groq LLM API. The application follows a modern cloud deployment workflow with containerization and automated CI/CD pipelines. The frontend is built with React and hosted as a static website on Amazon S3, while the backend is containerized using Docker and deployed on AWS ECS Fargate. GitHub Actions automates the CI/CD pipeline by building the React application and Docker images, uploading frontend build artifacts to S3, pushing container images to Amazon Elastic Container Registry, and deploying updated backend services to ECS, enabling a scalable and automated cloud-native architecture.",
+      features: [
+        "Developed an interactive chatbot interface for practicing German conversation with real-time responses.",
+        "Integrated grammar correction using LanguageTool to detect and suggest improvements in user sentences.",
+        "Implemented an AI teacher system using the Groq LLM API to generate beginner-level German responses and follow-up questions.",
+        "Designed a conversational learning experience tailored for A1 German learners with short and simple responses.",
+        "Containerized the backend application using Docker for consistent and portable deployments.",
+        "Implemented CI/CD pipelines using GitHub Actions to automatically build and push Docker images to Amazon ECR.",
+        "Configured AWS ECS Fargate to run the containerized FastAPI backend and handle chatbot API requests.",
+        "Hosted the React frontend as a static website on Amazon S3 for scalable and low-cost web hosting.",
+        "Enabled secure API communication between the S3-hosted frontend and ECS backend with proper CORS configuration."
+      ],
+      tech: [
+        "React",
+        "FastAPI",
+        "Python",
+        "Docker",
+        "GitHub Actions (CI/CD)",
+        "Amazon ECS Fargate",
+        "Amazon ECR",
+        "Amazon S3",
+        "Groq LLM API",
+        "LanguageTool"
+      ],
+      videos: [
+        "https://drive.google.com/file/d/1HRB6QZTI209ETVWo4MT9Mm0pCk1zD1Ak/view?usp=sharing"
+      ],
+    },
+    {
       title: "2048 Game – Containerized Deployment with AWS CI/CD",
       images: [
         "/assets/2048/1.png",
