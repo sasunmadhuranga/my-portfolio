@@ -5,7 +5,64 @@ import Image from "next/image";
 
 export default function Projects() {
   const projects = [
-        {
+     {
+        title: "Cloud-Native Match-3 Game Deployment (AWS EKS + Docker + CI/CD + Multi-AZ)",
+
+        images: [
+          "/assets/match3/1.png",
+          "/assets/match3/2.png",
+          "/assets/match3/3.png",
+          "/assets/match3/4.png",
+          "/assets/match3/5.png",
+          "/assets/match3/6.png",
+          "/assets/match3/7.png",
+          "/assets/match3/8.png",
+          "/assets/match3/9.png",
+          "/assets/match3/10.png",
+          "/assets/match3/11.png",
+          "/assets/match3/12.png"
+        ],
+
+        summary:
+          "Designed and deployed a cloud-native Match-3 React game using a production-style DevOps pipeline on AWS. The application was containerized using Docker and deployed to a Kubernetes cluster managed by Amazon EKS across multiple Availability Zones to ensure high availability and fault tolerance. A CI/CD pipeline was implemented using GitHub Actions to automate building Docker images, pushing them to Amazon ECR, and deploying updates to the Kubernetes cluster. The application is exposed to the internet using an AWS Application Load Balancer (ALB) via Kubernetes Ingress and the AWS Load Balancer Controller. The project involved configuring IAM roles with OIDC for secure AWS integration, managing Kubernetes resources (Deployment, Service, Ingress), and troubleshooting real-world issues such as cluster networking failures, DNS resolution problems, IAM misconfigurations, and ingress controller crashes.",
+
+        features: [
+          "Containerized a React-based Match-3 game using Docker with a multi-stage build and Nginx for optimized static delivery.",
+          "Deployed the application on Amazon EKS across multiple Availability Zones for high availability and fault tolerance.",
+          "Configured a CI/CD pipeline using GitHub Actions to automate Docker build, tagging, and deployment workflows.",
+          "Used Amazon ECR as a secure container registry for storing and managing Docker images.",
+          "Implemented Kubernetes Deployment with multiple replicas to ensure scalability and resilience.",
+          "Created Kubernetes Service to enable internal communication between pods and expose the application within the cluster.",
+          "Configured Kubernetes Ingress with AWS Load Balancer Controller to provision an Application Load Balancer (ALB).",
+          "Exposed the application publicly via ALB with load balancing across nodes in different Availability Zones.",
+          "Implemented IAM Roles for Service Accounts (IRSA) using OIDC for secure AWS service access.",
+          "Troubleshot Kubernetes networking issues including pod-to-API server communication failures and CNI misconfigurations.",
+          "Resolved DNS-related issues impacting cluster connectivity and kubectl operations.",
+          "Managed Helm deployments and resolved release conflicts during controller installation.",
+          "Validated application availability, routing, and load balancing behavior under a distributed setup."
+        ],
+
+        tech: [
+          "React",
+          "Docker",
+          "Kubernetes",
+          "Amazon EKS",
+          "Amazon ECR",
+          "AWS Application Load Balancer (ALB)",
+          "AWS IAM",
+          "AWS VPC",
+          "GitHub Actions (CI/CD)",
+          "Helm",
+          "eksctl",
+          "kubectl",
+        ],
+
+        videos: [
+          "https://drive.google.com/file/d/1AYbyysbFUhmPMqeTAFs1364yT-vPPIzn/view?usp=sharing"
+        ]
+      },
+
+      {
       title: "Real-Time Stock Market Data Analytics Pipeline (AWS Serverless + CI/CD)",
       images:[
         "/assets/stock/1.png",
