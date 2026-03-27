@@ -3,9 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 import Slider from "react-slick";
 import Image from "next/image";
 import { useRef } from "react";
-import Slider from "react-slick";
-import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
+
 
 export default function Projects() {
   const sliderRefs = useRef([]);
