@@ -2,8 +2,13 @@
 import { FaGithub } from 'react-icons/fa';
 import Slider from "react-slick";
 import Image from "next/image";
+import { useRef } from "react";
+import Slider from "react-slick";
+import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
+  const sliderRefs = useRef([]);
   const projects = [
      {
         title: "Cloud-Native Match-3 Game Deployment (AWS EKS + Docker + CI/CD + Multi-AZ)",
@@ -401,16 +406,26 @@ export default function Projects() {
               </h2>
 
               {project.images && project.images.length > 0 && (
-                <Slider {...sliderSettings} className="mb-4 rounded-lg overflow-hidden">
+                <Slider
+                  ref={(el) => (sliderRefs.current[index] = el)}
+                  {...sliderSettings}
+                  className="mb-4 rounded-lg overflow-hidden"
+                >
                   {project.images.map((img, i) => (
-                    <Image
+                    <div
                       key={i}
-                      src={img}
-                      alt={`${project.title} screenshot ${i + 1}`}
-                      width={800}
-                      height={400}
-                      className="rounded-lg object-cover w-full h-[600px]"
-                    />
+                      onMouseDown={() => sliderRefs.current[index]?.slickPause()} // stop on click/hold
+                      onMouseUp={() => sliderRefs.current[index]?.slickPlay()}   // resume after release
+                      onMouseLeave={() => sliderRefs.current[index]?.slickPlay()} // resume if mouse leaves
+                    >
+                      <Image
+                        src={img}
+                        alt={`${project.title} screenshot ${i + 1}`}
+                        width={800}
+                        height={400}
+                        className="rounded-lg object-cover w-full h-[600px]"
+                      />
+                    </div>
                   ))}
                 </Slider>
               )}
