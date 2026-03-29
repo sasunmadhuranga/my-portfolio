@@ -6,7 +6,7 @@ export default function About() {
         
         <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg">
           <Image
-            src="/profile.jpg"
+            src="/profile.png"
             alt="Your Name"
             width={160}
             height={160}
