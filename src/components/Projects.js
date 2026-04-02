@@ -8,6 +8,70 @@ import { useRef } from "react";
 export default function Projects() {
   const sliderRefs = useRef([]);
   const projects = [
+    {
+        title: "Cloud-Native Instagram Clone Deployment (AWS EKS + MERN + Docker + Jenkins CI/CD)",
+
+        images: [
+          "/assets/instagram/1.png",
+          "/assets/instagram/2.png",
+          "/assets/instagram/3.png",
+          "/assets/instagram/4.png",
+          "/assets/instagram/5.png",
+          "/assets/instagram/6.png",
+          "/assets/instagram/7.png",
+          "/assets/instagram/8.png",
+          "/assets/instagram/9.png",
+          "/assets/instagram/10.png",
+          "/assets/instagram/11.png",
+          "/assets/instagram/12.png",
+          "/assets/instagram/13.png"
+        ],
+
+        summary:
+          "Designed and deployed a full-stack Instagram clone using a cloud-native architecture on AWS, focusing on scalability, automation, and real-world DevOps practices. The application was built using the MERN stack, with the backend containerized using Docker and deployed to Amazon EKS. A complete CI/CD pipeline was implemented using Jenkins running in a Docker container on EC2, automating the process of building Docker images, pushing them to Amazon ECR, and deploying updates to Kubernetes with zero-downtime rolling updates. The React frontend was built and deployed to Amazon S3 as a static website. The backend API was exposed to the internet via an AWS Application Load Balancer (ALB) using Kubernetes Ingress and the AWS Load Balancer Controller. The project also involved provisioning infrastructure using Terraform, configuring IAM roles with IRSA for secure AWS access, and solving real-world challenges such as Jenkins-Docker integration issues, Kubernetes networking constraints, webhook failures, and storage limitations.",
+
+        features: [
+          "Built a full-stack social media platform with features including authentication, post creation, likes, comments, follow/unfollow, and user search.",
+          "Containerized the Node.js/Express backend using Docker with optimized build strategies for production deployment.",
+          "Deployed backend services on Amazon EKS using Kubernetes Deployments and Services for scalable container orchestration.",
+          "Configured Kubernetes Ingress with AWS Load Balancer Controller to dynamically provision an Application Load Balancer (ALB).",
+          "Exposed backend APIs securely to the internet via ALB with path-based routing.",
+          "Implemented a CI/CD pipeline using Jenkins (running in Docker) integrated with GitHub webhooks for automated deployments.",
+          "Automated Docker image build, tagging, and push to Amazon ECR within the CI/CD pipeline.",
+          "Used kubectl-based rolling updates (kubectl set image) to achieve zero-downtime deployments in Kubernetes.",
+          "Built and deployed the React frontend to Amazon S3 using automated pipeline steps.",
+          "Configured AWS S3 for media storage using multer-S3 for direct file uploads from the backend.",
+          "Provisioned complete AWS infrastructure using Terraform, including VPC, subnets, EKS cluster, IAM roles, and S3 buckets.",
+          "Implemented IAM Roles for Service Accounts (IRSA) to securely grant Kubernetes pods access to AWS services.",
+          "Configured multi-AZ networking with public and private subnets for high availability and isolation.",
+          "Integrated MongoDB Atlas as a managed cloud database for scalable data persistence.",
+          "Validated end-to-end system functionality including frontend-backend communication, API routing, and media uploads."
+        ],
+
+        tech: [
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB Atlas",
+          "Docker",
+          "Kubernetes",
+          "Amazon EKS",
+          "Amazon ECR",
+          "Amazon S3",
+          "AWS Application Load Balancer (ALB)",
+          "AWS IAM (IRSA)",
+          "AWS VPC",
+          "Terraform",
+          "Jenkins (CI/CD)",
+          "GitHub Webhooks",
+          "kubectl",
+          "Helm"
+        ],
+
+        videos: [
+          "https://drive.google.com/file/d/1jLzZGPdziPuQp4MwmgW0UzMZTIDN94e3/view?usp=sharing"
+        ]
+      },
      {
         title: "Cloud-Native Match-3 Game Deployment (AWS EKS + Docker + CI/CD + Multi-AZ)",
 
@@ -59,7 +123,7 @@ export default function Projects() {
           "eksctl",
           "kubectl",
         ],
-
+        link: "https://github.com/sasunmadhuranga/match3-game",
         videos: [
           "https://drive.google.com/file/d/1AYbyysbFUhmPMqeTAFs1364yT-vPPIzn/view?usp=sharing"
         ]
@@ -114,6 +178,7 @@ export default function Projects() {
         "Finnhub API",
         "AlphaVantage API"
       ],
+      link: "https://github.com/sasunmadhuranga/aws-stock-streaming-pipeline",
       videos: [
         "https://drive.google.com/file/d/18dGopyfJ7VcxNxreOFfKYiP4diuAtbjj/view?usp=sharing"
       ],
@@ -194,6 +259,7 @@ export default function Projects() {
         "AWS Cloud",
         "DevOps"
       ],
+      link: "https://github.com/sasunmadhuranga/game-2048",
       videos: [
         "https://drive.google.com/file/d/191b1qULHQAGC1c8OizygoQbK93F1qzSt/view?usp=sharing"
       ],
@@ -239,6 +305,7 @@ export default function Projects() {
         "JWT Authentication",
         "RESTful APIs",
       ],
+      link: "https://github.com/sasunmadhuranga/mern-volunteer-platform",
       applink: "https://mern-volunteer-platform.vercel.app/",
       videos: ["https://drive.google.com/file/d/1J6ZxjWaSYpL3IrO8ECzK0_fkupN0CQtb/view?usp=sharing",
               "https://drive.google.com/file/d/1DtJnhXVIP3SIMmb_wwvptmGdCPkgVgaX/view?usp=sharing",
