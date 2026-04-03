@@ -67,7 +67,7 @@ export default function Projects() {
           "kubectl",
           "Helm"
         ],
-
+        link: "https://github.com/sasunmadhuranga/instagram-clone-aws",
         videos: [
           "https://drive.google.com/file/d/1jLzZGPdziPuQp4MwmgW0UzMZTIDN94e3/view?usp=sharing"
         ]
