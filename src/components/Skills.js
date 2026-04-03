@@ -33,8 +33,11 @@ export default function Skills() {
       "Git",
       "GitHub",
       "GitHub Actions",
-      "Docker",
       "CI/CD",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins",
       "Linux",
     ],
     
