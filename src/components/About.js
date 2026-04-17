@@ -7,7 +7,7 @@ export default function About() {
         <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg">
           <Image
             src="/profile.png"
-            alt="Your Name"
+            alt="Sasun Madhuranga"
             width={160}
             height={160}
             className="rounded-full object-cover w-full h-full"
@@ -17,17 +17,22 @@ export default function About() {
         
         <div className="text-gray-100 prose prose-invert prose-lg max-w-4xl text-left">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
-          <p className="text-lg leading-relaxed ">
+          <p className="text-lg leading-relaxed">
             I’m <span className="font-semibold">Sasun Madhuranga</span>, a recent
-            <span className="text-blue-300"> B.Sc. in IT graduate (Final Year GPA: 3.64, Second Class Upper Division)</span>,
-            honored on the <span className="font-semibold">Dean’s List (3.81 GPA)</span> in my final semester.
-            I’m passionate about building AI-powered, responsive, and scalable web applications.
-            I specialize in the <span className="font-semibold">MERN stack (MongoDB, Express, React, Node.js)</span>
-            and enjoy creating user-friendly interfaces and full-stack solutions.
+            <span className="text-blue-300"> B.Sc. in IT graduate (GPA: 3.64, Second Class Upper Division)</span>,
+            with Dean’s List recognition in my final semester.  
+
+            I specialize in <span className="font-semibold">Cloud and DevOps engineering</span>, with hands-on experience building and deploying scalable, cloud-native applications using 
+            <span className="font-semibold"> AWS, Docker, Kubernetes (EKS), Terraform, and CI/CD pipelines</span>.  
+
+            I have worked on production-grade projects involving containerized microservices, infrastructure as code, and automated deployment pipelines.
           </p>
 
           <p className="mt-4 text-lg leading-relaxed">
-             My goal is to contribute to impactful projects, continuously learn new technologies, and grow as a well-rounded developer. Outside of coding, I enjoy exploring new tools, designing graphics, editing videos, and staying updated with the latest tech trends.
+            I also have a strong foundation in the 
+            <span className="font-semibold">MERN stack</span>, allowing me to build and integrate full-stack applications when needed.  
+
+            My goal is to contribute to real-world cloud systems, improve reliability and scalability, and grow as a DevOps/Cloud Engineer.
           </p>
 
           <a

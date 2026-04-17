@@ -27,8 +27,8 @@ export default function Landing() {
       </p>
 
       <h4 className="mt-4 max-w-2xl text-base md:text-lg text-gray-100">
-        I build AI-powered, secure, and scalable web applications using{' '}
-        <span className="font-bold text-white">React, Node.js, and cloud technologies</span>.
+        I build and deploy scalable, cloud-native applications using{' '}
+        <span className="font-bold text-white">MERN stack, AWS, and DevOps tools like Docker, Kubernetes, and CI/CD.</span>.
       </h4>
 
 
