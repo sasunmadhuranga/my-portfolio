@@ -29,7 +29,7 @@ export default function About() {
           </p>
 
           <p className="mt-4 text-lg leading-relaxed">
-            I also have a strong foundation in the 
+            I also have a strong foundation in the{' '}
             <span className="font-semibold">MERN stack</span>, allowing me to build and integrate full-stack applications when needed.  
 
             My goal is to contribute to real-world cloud systems, improve reliability and scalability, and grow as a DevOps/Cloud Engineer.
