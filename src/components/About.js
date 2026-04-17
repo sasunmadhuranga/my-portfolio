@@ -19,7 +19,7 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <p className="text-lg leading-relaxed">
             I’m <span className="font-semibold">Sasun Madhuranga</span>, a recent
-            <span className="text-blue-300"> B.Sc. in IT graduate (GPA: 3.64, Second Class Upper Division)</span>,
+            <span className="text-blue-300"> B.Sc. in IT graduate (Final Year GPA: 3.64, Second Class Upper Division)</span>,
             with Dean’s List recognition in my final semester.  
 
             I specialize in <span className="font-semibold">Cloud and DevOps engineering</span>, with hands-on experience building and deploying scalable, cloud-native applications using 
