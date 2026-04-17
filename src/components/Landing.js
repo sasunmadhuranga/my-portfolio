@@ -23,7 +23,7 @@ export default function Landing() {
       </h1>
 
       <p className="mt-3 text-2xl md:text-3xl font-semibold">
-         Full-Stack Developer
+         DevOps & Full-Stack Engineer
       </p>
 
       <h4 className="mt-4 max-w-2xl text-base md:text-lg text-gray-100">
