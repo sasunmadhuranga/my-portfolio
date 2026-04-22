@@ -19,26 +19,35 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
 
           <p className="text-lg leading-relaxed">
-            I’m <span className="font-semibold">Sasun Madhuranga</span>, a B.Sc. in IT graduate from the University of Moratuwa
-            with a strong interest in building scalable software and cloud-native systems.
+            I’m <span className="font-semibold">Sasun Madhuranga</span>, a
+            <span className="text-blue-300"> B.Sc. in IT graduate (GPA: 3.64, Second Class Upper Division)</span>,
+            with hands-on experience building scalable software and cloud-native systems.
           </p>
 
           <p className="mt-4 text-lg leading-relaxed">
-            I have hands-on experience developing modern full-stack applications using
-            <span className="font-semibold"> React, Next.js, Node.js, Express, MongoDB, and TypeScript</span>,
-            along with designing secure REST APIs and authentication systems.
+            I develop modern full-stack applications using{" "}
+            <span className="font-semibold">
+              React, Next.js, Node.js, Express, MongoDB, and TypeScript
+            </span>
+            , with experience designing secure REST APIs, authentication systems,
+            and responsive user experiences.
           </p>
 
           <p className="mt-4 text-lg leading-relaxed">
-            I also work with
-            <span className="font-semibold"> AWS, Docker, Kubernetes (EKS), Terraform, and CI/CD pipelines</span>
-            to deploy applications, automate workflows, and improve scalability and reliability.
+            I also work with{" "}
+            <span className="font-semibold">
+              AWS, Docker, Kubernetes (EKS), Terraform, and CI/CD pipelines
+            </span>{" "}
+            to deploy applications, automate workflows, and improve scalability,
+            reliability, and delivery speed.
           </p>
 
           <p className="mt-4 text-lg leading-relaxed">
-            My goal is to contribute as a Software Engineer, Full-Stack Developer,
-            Cloud Engineer, or DevOps Engineer while continuing to grow across both
-            development and infrastructure.
+            My goal is to contribute as a{" "}
+            <span className="font-semibold">
+              Software Engineer, Full-Stack Developer, Cloud Engineer, or DevOps Engineer
+            </span>{" "}
+            while continuing to grow across both development and infrastructure.
           </p>
 
           <a
