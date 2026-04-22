@@ -1,13 +1,13 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useTypewriter } from 'react-simple-typewriter';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Landing() {
   const [text] = useTypewriter({
     words: ['Sasun Madhuranga'],
-    loop: 0, 
+    loop: 0,
     typeSpeed: 100,
     deleteSpeed: 50,
     delaySpeed: 1000,
@@ -15,7 +15,10 @@ export default function Landing() {
 
   return (
     <section className="flex flex-col justify-center items-center h-[90vh] text-center bg-gradient-to-r from-gray-800 via-slate-800 to-indigo-950 text-white px-4">
-      <h2 className="text-lg md:text-xl mb-2">Hi, I am</h2>
+      
+      <h2 className="text-lg md:text-xl mb-2 text-gray-200">
+        Hi, I am
+      </h2>
 
       <h1 className="text-4xl md:text-6xl font-extrabold">
         {text}
@@ -23,14 +26,15 @@ export default function Landing() {
       </h1>
 
       <p className="mt-3 text-2xl md:text-3xl font-semibold">
-         DevOps & Full-Stack Engineer
+        Software Engineer | Full-Stack Developer | Cloud & DevOps
       </p>
 
-      <h4 className="mt-4 max-w-2xl text-base md:text-lg text-gray-100">
-        I build and deploy scalable, cloud-native applications using{' '}
-        <span className="font-bold text-white">MERN stack, AWS, and DevOps tools like Docker, Kubernetes, and CI/CD.</span>.
+      <h4 className="mt-4 max-w-3xl text-base md:text-lg text-gray-100 leading-relaxed">
+        I build scalable web applications and deploy cloud-native systems using{' '}
+        <span className="font-bold text-white">
+          React, Node.js, MongoDB, AWS, Docker, Kubernetes, Terraform, and CI/CD.
+        </span>
       </h4>
-
 
       <div className="mt-6 flex flex-wrap gap-4">
         <a
@@ -39,6 +43,7 @@ export default function Landing() {
         >
           View My Work
         </a>
+
         <a
           href="/sasun_madhuranga_resume.pdf"
           download
@@ -58,6 +63,7 @@ export default function Landing() {
           <i className="fab fa-github text-2xl" aria-hidden="true"></i>
           <span className="sr-only">GitHub</span>
         </a>
+
         <a
           href="https://www.linkedin.com/in/sasun-madhuranga/"
           target="_blank"
