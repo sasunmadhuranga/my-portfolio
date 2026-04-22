@@ -20,7 +20,7 @@ export default function About() {
 
           <p className="text-lg leading-relaxed">
             I’m <span className="font-semibold">Sasun Madhuranga</span>, a
-            <span className="text-blue-300"> B.Sc. in IT graduate (GPA: 3.64, Second Class Upper Division)</span>,
+            <span className="text-blue-300"> B.Sc. in IT graduate (Final Year GPA: 3.64, Second Class Upper Division)</span>,
             with hands-on experience building scalable software and cloud-native systems.
           </p>
 
