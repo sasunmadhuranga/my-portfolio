@@ -12,12 +12,12 @@ export default function Projects() {
       title: "Production-Grade AI Interview Coach Deployment (AWS ECS Fargate + Terraform + Jenkins CI/CD)",
 
       images: [
-        "/assets/interview-coach/1.png",
-        "/assets/interview-coach/2.png",
-        "/assets/interview-coach/3.png",
-        "/assets/interview-coach/4.png",
-        "/assets/interview-coach/5.png",
-        "/assets/interview-coach/6.png",
+        "/assets/interview-coach/1.jpg",
+        "/assets/interview-coach/2.jpg",
+        "/assets/interview-coach/3.jpg",
+        "/assets/interview-coach/4.jpg",
+        "/assets/interview-coach/5.jpg",
+        "/assets/interview-coach/6.jpg",
         "/assets/interview-coach/7.png",
         "/assets/interview-coach/8.png",
         "/assets/interview-coach/9.png",
