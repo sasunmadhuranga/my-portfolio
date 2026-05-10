@@ -9,6 +9,77 @@ export default function Projects() {
   const sliderRefs = useRef([]);
   const projects = [
     {
+      title: "Production-Grade AI Interview Coach Deployment (AWS ECS Fargate + Terraform + Jenkins CI/CD)",
+
+      images: [
+        "/assets/interview-coach/1.png",
+        "/assets/interview-coach/2.png",
+        "/assets/interview-coach/3.png",
+        "/assets/interview-coach/4.png",
+        "/assets/interview-coach/5.png",
+        "/assets/interview-coach/6.png",
+        "/assets/interview-coach/7.png",
+        "/assets/interview-coach/8.png",
+        "/assets/interview-coach/9.png",
+        "/assets/interview-coach/10.png",
+        "/assets/interview-coach/11.png",
+        "/assets/interview-coach/12.png",
+        "/assets/interview-coach/13.png",
+        "/assets/interview-coach/14.png",
+        "/assets/interview-coach/15.png",
+        "/assets/interview-coach/16.png"
+      ],
+
+      summary:
+        "Designed and deployed a full-stack AI Interview Coach platform using a production-grade cloud-native architecture on AWS, focusing on infrastructure automation, secure networking, CI/CD, and scalable backend deployment. The application frontend was developed using Next.js and TypeScript and deployed on Vercel with automated GitHub integration, while the backend API was containerized using Docker and deployed to Amazon ECS Fargate inside private subnets. Infrastructure was provisioned using Terraform, including a multi-AZ VPC, public and private subnets, NAT Gateway, Application Load Balancer (ALB), ECS cluster, IAM roles, DynamoDB tables, and ECR repositories. A complete CI/CD pipeline was implemented using Jenkins running on EC2, automating Docker image builds, tagging, ECR pushes, and ECS deployments. The system integrated Groq LLM APIs for AI-powered interview question generation and answer evaluation, DynamoDB for session persistence, JWT + Google OAuth authentication, and secure secret management using AWS Systems Manager Parameter Store.",
+
+      features: [
+        "Built a full-stack AI Interview Coach platform with role-based interview simulations, answer evaluation, scoring, feedback generation, and performance tracking.",
+        "Developed the frontend using Next.js + TypeScript with responsive UI and deployed it to Vercel using GitHub auto-deployments.",
+        "Containerized the Express.js backend using Docker with production-ready build optimizations.",
+        "Deployed backend services to Amazon ECS Fargate inside private subnets for secure and scalable container execution.",
+        "Configured an Application Load Balancer (ALB) to securely expose backend APIs to the internet.",
+        "Implemented a CI/CD pipeline using Jenkins on EC2 integrated with GitHub webhooks for automated deployments.",
+        "Automated Docker image build, tagging, and push to Amazon ECR within Jenkins pipelines.",
+        "Configured ECS rolling deployments with force-new-deployment for automated backend updates.",
+        "Provisioned AWS infrastructure using Terraform, including VPC, public/private subnets, ECS, ALB, IAM roles, NAT Gateway, ECR, and DynamoDB.",
+        "Designed multi-AZ networking architecture across multiple availability zones for improved availability and fault tolerance.",
+        "Implemented secure outbound internet access for private ECS workloads using NAT Gateway.",
+        "Integrated DynamoDB for scalable NoSQL data persistence for users and interview sessions.",
+        "Configured secure secret management using AWS Systems Manager Parameter Store (SSM SecureString) for API keys and credentials.",
+        "Implemented JWT authentication and Google OAuth for secure user login and access management.",
+        "Integrated Groq LLM APIs for dynamic interview question generation and AI-powered answer evaluation.",
+        "Configured CloudWatch logging for ECS task monitoring and debugging.",
+        "Resolved real-world deployment challenges including mixed content issues, CORS configuration, ECS task failures, IAM role conflicts, Docker build issues, and Jenkins environment setup."
+      ],
+
+      tech: [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "Docker",
+        "Amazon ECS Fargate",
+        "Amazon ECR",
+        "Amazon DynamoDB",
+        "AWS Application Load Balancer (ALB)",
+        "AWS IAM",
+        "AWS VPC",
+        "AWS NAT Gateway",
+        "Amazon CloudWatch",
+        "Terraform",
+        "Jenkins (CI/CD)",
+        "Groq LLM API",
+        "Vercel"
+      ],
+
+      link: "https://github.com/sasunmadhuranga/interview-coach",
+
+      videos: [
+        "https://drive.google.com/file/d/1maYP5jTbq2cU1RxypAt_fqwBMdA6TdPv/view?usp=sharing"
+      ]
+    },
+    {
         title: "Cloud-Native Instagram Clone Deployment (AWS EKS + MERN + Docker + Jenkins CI/CD)",
 
         images: [
