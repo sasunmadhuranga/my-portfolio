@@ -33,7 +33,7 @@ export default function Projects() {
         "Designed and deployed a production-grade GitOps pipeline on AWS using ArgoCD, EKS, and GitHub Actions, focusing on pull-based continuous delivery, infrastructure automation, and full-stack observability. The application backend was containerized using Docker and deployed to Amazon EKS across two availability zones using a GitOps workflow, where GitHub Actions builds and pushes images to ECR and updates Kubernetes manifests in a dedicated GitOps repository, while ArgoCD continuously watches the repository and syncs the cluster automatically. Infrastructure was provisioned using Terraform, including a multi-AZ VPC, public and private subnets, NAT Gateways, EKS cluster with managed node groups, ECR repository, IAM roles with OIDC-based IRSA, and security groups. A complete observability stack was deployed using the kube-prometheus-stack Helm chart, including Prometheus for metrics scraping, Grafana with pre-loaded dashboards, Alertmanager for email alerting, and ArgoCD Notifications for pipeline event emails. Application secrets were managed securely using Kubernetes Secrets, and the app was exposed to the internet via an AWS Application Load Balancer using the AWS Load Balancer Controller and Kubernetes Ingress.",
 
       features: [
-        "Implemented a pull-based GitOps workflow using ArgoCD, where the cluster state is always driven by Git — no CI tool ever touches kubectl or the cluster directly.",
+        "Implemented a pull-based GitOps workflow using ArgoCD, where the cluster state is always driven by Git, no CI tool ever touches kubectl or the cluster directly.",
         "Separated concerns across three dedicated GitHub repositories: application source code, Terraform infrastructure, and Kubernetes manifests (gitops-manifests as the single source of truth).",
         "Provisioned multi-AZ AWS infrastructure using Terraform modules, including VPC with public and private subnets across two availability zones, NAT Gateways, EKS cluster, managed node group, ECR, and IAM roles.",
         "Configured OIDC provider and IAM Roles for Service Accounts (IRSA) for secure, credential-free AWS API access from Kubernetes pods.",
@@ -73,10 +73,19 @@ export default function Projects() {
         "node-exporter",
       ],
 
-      link: [
-        "https://github.com/sasunmadhuranga/gitops-manifests",
-        "https://github.com/sasunmadhuranga/gitops-infra",
-        "https://github.com/sasunmadhuranga/python-backend-app"
+      links: [
+        {
+          name: "GitOps Manifests",
+          url: "https://github.com/sasunmadhuranga/gitops-manifests"
+        },
+        {
+          name: "Terraform Infrastructure",
+          url: "https://github.com/sasunmadhuranga/gitops-infra"
+        },
+        {
+          name: "Python Backend",
+          url: "https://github.com/sasunmadhuranga/python-backend-app"
+        }
       ],
 
       videos: [
@@ -667,17 +676,20 @@ export default function Projects() {
               </div>
             </div>
 
-           {project.link && (
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-blue-700 py-1 px-4 rounded-lg hover:bg-blue-800 transition"
-            >
-              <FaGithub className="text-xl text-gray-200" />
-              <span className="text-gray-200">GitHub</span>
-            </a>
-          )}
+           <div className="flex flex-wrap gap-2">
+            {project.links?.map((repo, i) => (
+              <a
+                key={i}
+                href={repo.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-blue-700 py-1 px-4 rounded-lg hover:bg-blue-800 transition"
+              >
+                <FaGithub className="text-xl text-gray-200" />
+                <span className="text-gray-200">{repo.name}</span>
+              </a>
+            ))}
+          </div>
           {project.applink && (
             <a 
               href={project.applink}
