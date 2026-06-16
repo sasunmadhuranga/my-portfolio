@@ -157,7 +157,7 @@ export default function Projects() {
         "Vercel"
       ],
 
-      link: "https://github.com/sasunmadhuranga/interview-coach",
+      links: "https://github.com/sasunmadhuranga/interview-coach",
 
       videos: [
         "https://drive.google.com/file/d/1maYP5jTbq2cU1RxypAt_fqwBMdA6TdPv/view?usp=sharing"
