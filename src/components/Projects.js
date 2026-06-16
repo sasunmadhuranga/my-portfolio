@@ -7,6 +7,7 @@ import { useRef } from "react";
 
 export default function Projects() {
   const sliderRefs = useRef([]);
+
   const projects = [
     {
       title: "GitOps Pipeline with ArgoCD on EKS (Terraform + GitHub Actions + Prometheus/Grafana)",
@@ -157,9 +158,7 @@ export default function Projects() {
         "Vercel"
       ],
 
-      links: [
-        "https://github.com/sasunmadhuranga/interview-coach"
-      ],
+      links: "https://github.com/sasunmadhuranga/interview-coach",
 
       videos: [
         "https://drive.google.com/file/d/1maYP5jTbq2cU1RxypAt_fqwBMdA6TdPv/view?usp=sharing"
@@ -611,6 +610,12 @@ export default function Projects() {
     pauseOnHover: false,
   };
 
+  const repos = projects.links || (
+    projects.link
+      ? [{ name: "GitHub Repository", url: project.link }]
+      : []
+  );
+
   return (
     <section className="min-h-screen bg-gradient-to-r from-gray-800 via-slate-800 to-indigo-950 py-16 px-8 md:px-20 lg:px-40">
       <h1 className="text-4xl font-bold text-center text-gray-100 mt-5 mb-10">
@@ -679,19 +684,19 @@ export default function Projects() {
             </div>
 
            <div className="flex flex-wrap gap-2">
-            {project.links?.map((repo, i) => (
-              <a
-                key={i}
-                href={repo.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-blue-700 py-1 px-4 rounded-lg hover:bg-blue-800 transition"
-              >
-                <FaGithub className="text-xl text-gray-200" />
-                <span className="text-gray-200">{repo.name}</span>
-              </a>
-            ))}
-          </div>
+              {repos.map((repo, i) => (
+                <a
+                  key={i}
+                  href={repo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-blue-700 py-1 px-4 rounded-lg hover:bg-blue-800 transition"
+                >
+                  <FaGithub className="text-xl text-gray-200" />
+                  <span className="text-gray-200">{repo.name}</span>
+                </a>
+              ))}
+            </div>
           {project.applink && (
             <a 
               href={project.applink}
