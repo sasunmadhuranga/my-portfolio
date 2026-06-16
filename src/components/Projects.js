@@ -9,6 +9,81 @@ export default function Projects() {
   const sliderRefs = useRef([]);
   const projects = [
     {
+      title: "GitOps Pipeline with ArgoCD on EKS (Terraform + GitHub Actions + Prometheus/Grafana)",
+
+      images: [
+        "/assets/gitops-argocd/1.png",
+        "/assets/gitops-argocd/2.png",
+        "/assets/gitops-argocd/3.png",
+        "/assets/gitops-argocd/4.png",
+        "/assets/gitops-argocd/5.png",
+        "/assets/gitops-argocd/6.png",
+        "/assets/gitops-argocd/7.png",
+        "/assets/gitops-argocd/8.png",
+        "/assets/gitops-argocd/9.png",
+        "/assets/gitops-argocd/10.png",
+        "/assets/gitops-argocd/11.png",
+        "/assets/gitops-argocd/12.png",
+        "/assets/gitops-argocd/13.png",
+        "/assets/gitops-argocd/14.png",
+        "/assets/gitops-argocd/15.png"
+      ],
+
+      summary:
+        "Designed and deployed a production-grade GitOps pipeline on AWS using ArgoCD, EKS, and GitHub Actions, focusing on pull-based continuous delivery, infrastructure automation, and full-stack observability. The application backend was containerized using Docker and deployed to Amazon EKS across two availability zones using a GitOps workflow, where GitHub Actions builds and pushes images to ECR and updates Kubernetes manifests in a dedicated GitOps repository, while ArgoCD continuously watches the repository and syncs the cluster automatically. Infrastructure was provisioned using Terraform, including a multi-AZ VPC, public and private subnets, NAT Gateways, EKS cluster with managed node groups, ECR repository, IAM roles with OIDC-based IRSA, and security groups. A complete observability stack was deployed using the kube-prometheus-stack Helm chart, including Prometheus for metrics scraping, Grafana with pre-loaded dashboards, Alertmanager for email alerting, and ArgoCD Notifications for pipeline event emails. Application secrets were managed securely using Kubernetes Secrets, and the app was exposed to the internet via an AWS Application Load Balancer using the AWS Load Balancer Controller and Kubernetes Ingress.",
+
+      features: [
+        "Implemented a pull-based GitOps workflow using ArgoCD, where the cluster state is always driven by Git — no CI tool ever touches kubectl or the cluster directly.",
+        "Separated concerns across three dedicated GitHub repositories: application source code, Terraform infrastructure, and Kubernetes manifests (gitops-manifests as the single source of truth).",
+        "Provisioned multi-AZ AWS infrastructure using Terraform modules, including VPC with public and private subnets across two availability zones, NAT Gateways, EKS cluster, managed node group, ECR, and IAM roles.",
+        "Configured OIDC provider and IAM Roles for Service Accounts (IRSA) for secure, credential-free AWS API access from Kubernetes pods.",
+        "Built a GitHub Actions CI pipeline that builds Docker images, pushes them to ECR with commit SHA tags, and automatically commits the updated image tag to the gitops-manifests repository.",
+        "Configured ArgoCD to auto-sync the cluster on every gitops-manifests commit with selfHeal enabled, automatically reverting any manual cluster changes back to Git state.",
+        "Used Kustomize overlays for environment-specific configuration (dev and prod), enabling promotion of releases via pull requests.",
+        "Deployed the kube-prometheus-stack via Helm managed by ArgoCD, including Prometheus, Grafana, Alertmanager, kube-state-metrics, and node-exporter.",
+        "Configured ServiceMonitors to scrape ArgoCD controller, server, and repo-server metrics into Prometheus for pipeline visibility.",
+        "Pre-loaded four Grafana dashboards: ArgoCD sync status, Kubernetes cluster overview, pod resource usage, and Node Exporter full metrics.",
+        "Defined custom PrometheusRules for pod crash-looping, deployment replica mismatch, ArgoCD sync failures, node memory pressure, and high CPU alerts.",
+        "Configured Alertmanager with Gmail SMTP for email alerts on infrastructure and workload health issues.",
+        "Configured ArgoCD Notifications controller with email templates for sync success, sync failure, degraded health, and new deployment events.",
+        "Exposed the backend API to the internet using an AWS Application Load Balancer provisioned via the AWS Load Balancer Controller and Kubernetes Ingress.",
+        "Managed application secrets securely using Kubernetes Secrets with secretKeyRef injection into pod environment variables.",
+        "Configured topology spread constraints to distribute pods across both availability zones for high availability.",
+        "Demonstrated GitOps rollback by reverting a gitops-manifests commit, causing ArgoCD to automatically redeploy the previous image version.",
+        "Resolved real-world challenges including EKS node pod limits on t3.small instances, ArgoCD CRD installation issues, private repository authentication, Kustomize image selector mismatches, and Kubernetes secret injection failures."
+      ],
+
+      tech: [
+        "Python",
+        "FastAPI",
+        "Docker",
+        "Amazon EKS",
+        "Amazon ECR",
+        "AWS ALB",
+        "AWS VPC",
+        "AWS NAT Gateway",
+        "AWS IAM + OIDC (IRSA)",
+        "Terraform",
+        "ArgoCD",
+        "GitHub Actions",
+        "Kustomize",
+        "Prometheus",
+        "Grafana",
+        "Alertmanager",
+        "node-exporter",
+      ],
+
+      link: [
+        "https://github.com/sasunmadhuranga/gitops-manifests",
+        "https://github.com/sasunmadhuranga/gitops-infra",
+        "https://github.com/sasunmadhuranga/python-backend-app"
+      ],
+
+      videos: [
+        "https://drive.google.com/file/d/1qHSMdP4I6zDNflYutWioMVGUE3KAh7l6/view?usp=sharing"
+      ]
+    },
+    {
       title: "Production-Grade AI Interview Coach Deployment (AWS ECS Fargate + Terraform + Jenkins CI/CD)",
 
       images: [
