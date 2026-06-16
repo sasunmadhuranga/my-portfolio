@@ -651,12 +651,6 @@ export default function Projects() {
     pauseOnHover: false,
   };
 
-  const repos = projects.links || (
-    projects.link
-      ? [{ name: "GitHub Repository", url: project.link }]
-      : []
-  );
-
   return (
     <section className="min-h-screen bg-gradient-to-r from-gray-800 via-slate-800 to-indigo-950 py-16 px-8 md:px-20 lg:px-40">
       <h1 className="text-4xl font-bold text-center text-gray-100 mt-5 mb-10">
@@ -725,7 +719,7 @@ export default function Projects() {
             </div>
 
            <div className="flex flex-wrap gap-2">
-              {repos.map((repo, i) => (
+              {project.links?.map((repo, i) => (
                 <a
                   key={i}
                   href={repo.url}
