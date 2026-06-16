@@ -158,7 +158,12 @@ export default function Projects() {
         "Vercel"
       ],
 
-      links: "https://github.com/sasunmadhuranga/interview-coach",
+      links: [
+      {
+        name: "GitHub Repository",
+        url: "https://github.com/sasunmadhuranga/interview-coach"
+      }
+    ],
 
       videos: [
         "https://drive.google.com/file/d/1maYP5jTbq2cU1RxypAt_fqwBMdA6TdPv/view?usp=sharing"
@@ -223,7 +228,12 @@ export default function Projects() {
           "kubectl",
           "Helm"
         ],
-        link: "https://github.com/sasunmadhuranga/instagram-clone-aws",
+        links: [
+          {
+            name: "GitHub Repository",
+            url: "https://github.com/sasunmadhuranga/instagram-clone-aws"
+          }
+        ],
         videos: [
           "https://drive.google.com/file/d/1jLzZGPdziPuQp4MwmgW0UzMZTIDN94e3/view?usp=sharing"
         ]
@@ -279,7 +289,13 @@ export default function Projects() {
           "eksctl",
           "kubectl",
         ],
-        link: "https://github.com/sasunmadhuranga/match3-game",
+        links: [
+          {
+            name: "GitHub Repository",
+            url: "https://github.com/sasunmadhuranga/match3-game"
+          }
+        ],
+  
         videos: [
           "https://drive.google.com/file/d/1AYbyysbFUhmPMqeTAFs1364yT-vPPIzn/view?usp=sharing"
         ]
@@ -334,7 +350,12 @@ export default function Projects() {
         "Finnhub API",
         "AlphaVantage API"
       ],
-      link: "https://github.com/sasunmadhuranga/aws-stock-streaming-pipeline",
+      links: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/sasunmadhuranga/aws-stock-streaming-pipeline"
+        }
+      ],
       videos: [
         "https://drive.google.com/file/d/18dGopyfJ7VcxNxreOFfKYiP4diuAtbjj/view?usp=sharing"
       ],
@@ -415,7 +436,12 @@ export default function Projects() {
         "AWS Cloud",
         "DevOps"
       ],
-      link: "https://github.com/sasunmadhuranga/game-2048",
+      links: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/sasunmadhuranga/game-2048"
+        }
+      ],
       videos: [
         "https://drive.google.com/file/d/191b1qULHQAGC1c8OizygoQbK93F1qzSt/view?usp=sharing"
       ],
@@ -461,7 +487,12 @@ export default function Projects() {
         "JWT Authentication",
         "RESTful APIs",
       ],
-      link: "https://github.com/sasunmadhuranga/mern-volunteer-platform",
+      links: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/sasunmadhuranga/mern-volunteer-platform"
+        }
+      ],
       applink: "https://mern-volunteer-platform.vercel.app/",
       videos: ["https://drive.google.com/file/d/1J6ZxjWaSYpL3IrO8ECzK0_fkupN0CQtb/view?usp=sharing",
               "https://drive.google.com/file/d/1DtJnhXVIP3SIMmb_wwvptmGdCPkgVgaX/view?usp=sharing",
@@ -525,7 +556,12 @@ export default function Projects() {
         "JWT",
         "REST APIs",
       ],
-      link: "https://github.com/sasunmadhuranga/instagram-clone-app",
+      links: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/sasunmadhuranga/instagram-clone-app"
+        }
+      ],
       videos: ["https://drive.google.com/file/d/1_ZLObQCkDT8SROI8D-M2bB6YLGngR_uG/view?usp=drive_link",]
     },
 
@@ -564,7 +600,12 @@ export default function Projects() {
         "Responsive layout and components using Chakra UI.",
       ],
       tech: ["React", "React Router", "Chakra UI", "Axios", "API"],
-      link: "https://github.com/sasunmadhuranga/book-finder-app",
+      links: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/sasunmadhuranga/book-finder-app"
+        }
+      ],
     },
     {
       title: "Inventory Management System",
