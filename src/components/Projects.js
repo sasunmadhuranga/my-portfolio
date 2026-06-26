@@ -10,6 +10,80 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Production-Grade DevSecOps Pipeline (AWS ECS Fargate + Terraform + GitHub Actions + Five-Gate Security)",
+
+      images: [
+        "/assets/devsecops/diagram.png",
+        "/assets/devsecops/1.png",   
+        "/assets/devsecops/2.png",   
+        "/assets/devsecops/3.png",   
+        "/assets/devsecops/5.png",   
+        "/assets/devsecops/6.png",   
+        "/assets/devsecops/7.png",   
+        "/assets/devsecops/9.png",   
+        "/assets/devsecops/10.png",   
+        "/assets/devsecops/11.png",   
+        "/assets/devsecops/13.png",  
+        "/assets/devsecops/14.png",  
+        "/assets/devsecops/16.png",  
+        "/assets/devsecops/17.png",  
+        "/assets/devsecops/18.png", 
+        "/assets/devsecops/19.png",  
+        "/assets/devsecops/20.png",  
+        "/assets/devsecops/21.png", 
+        "/assets/devsecops/22.png",   
+        "/assets/devsecops/23.png",  
+        "/assets/devsecops/24.png",  
+        "/assets/devsecops/25.png",  
+      ],
+
+      summary:
+        "Designed and deployed a production-grade DevSecOps platform on AWS that integrates five automated security gates directly into the CI/CD pipeline, ensuring every code change is validated before reaching production. Built a FastAPI backend deployed on Amazon ECS Fargate across isolated staging and production environments, with all infrastructure provisioned through modular Terraform. The platform automates secret detection, static application security testing (SAST), infrastructure-as-code validation, container vulnerability scanning, and dynamic application security testing (DAST) using GitHub Actions. Security findings are centralized through GitHub Code Scanning and SonarCloud, providing a continuous audit trail across the software delivery lifecycle. To strengthen supply-chain security, all GitHub Actions dependencies were pinned to immutable commit SHAs rather than version tags, a decision validated when a widely used CI action was compromised during development. The resulting system demonstrates enterprise-grade cloud infrastructure, secure software delivery practices, and end-to-end automation from code commit to production deployment.",
+
+      features: [
+        "Implemented a five-gate security pipeline in GitHub Actions: Gitleaks (secret scanning), Bandit + Semgrep + pip-audit + SonarCloud (SAST and dependency auditing), Checkov (IaC scanning), Trivy (container CVE scanning), and OWASP ZAP (DAST against live staging).",
+        "Pinned all GitHub Actions dependencies to full 40-character commit SHAs to eliminate supply chain attack surface",
+        "Built and containerized a FastAPI REST API backend using a multi-stage Docker build with a production health check endpoint, and zero HIGH/CRITICAL CVEs in the final image.",
+        "Deployed backend services to Amazon ECS Fargate in private subnets with ALB integration, separate staging and production clusters, and automated task definition updates on every pipeline run.",
+        "Provisioned complete AWS infrastructure using modular Terraform including multi-AZ VPC, public/private subnets, NAT Gateway, ALB with S3 access logging, ECR repositories with lifecycle policies, SSM Parameter Store for secret injection, and CloudWatch log groups.",
+        "Isolated staging and production Terraform state using separate S3 backend keys, ensuring independent environment lifecycle management.",
+        "Implemented secure secret management using AWS SSM Parameter Store with JWT secrets injected into ECS task definitions at runtime.",
+        "Conducted automated DAST scans against a live staging environment using OWASP ZAP API and baseline scans, with controlled suppression of documented false positives.",
+        "Uploaded all security scan results (Trivy, Checkov) in SARIF format to the GitHub Security Code Scanning tab, creating a persistent audit trail of every pipeline run.",
+        "Achieved a passing SonarCloud Quality Gate with an A Security Rating, zero security hotspots, and automated quality enforcement on every pull request and push.",
+      ],
+
+      tech: [
+        "Python",
+        "FastAPI",
+        "Docker",
+        "Amazon ECS Fargate",
+        "Amazon ECR",
+        "AWS ALB",
+        "AWS NAT Gateway",
+        "AWS SSM Parameter Store",
+        "Amazon CloudWatch",
+        "Amazon S3",
+        "Terraform",
+        "GitHub Actions",
+        "Gitleaks",
+        "Bandit",
+        "Semgrep",
+        "pip-audit",
+        "SonarCloud",
+        "Checkov",
+        "Trivy",
+        "OWASP ZAP",
+      ],
+
+      links: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/sasunmadhuranga/devsecops-project"
+        }
+      ],
+    },
+    {
       title: "GitOps Pipeline with ArgoCD on EKS (Terraform + GitHub Actions + Prometheus/Grafana)",
 
       images: [
