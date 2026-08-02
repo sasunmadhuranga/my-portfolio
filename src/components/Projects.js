@@ -10,6 +10,75 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "URL Shortener on AWS (Terraform + Ansible + GitLab CI/CD + OIDC-Federated Auth)",
+
+      images: [
+        "/assets/url-shortener/diagram.png",
+        "/assets/url-shortener/1.png",
+        "/assets/url-shortener/2.png",
+        "/assets/url-shortener/4.png",
+        "/assets/url-shortener/5.png",
+        "/assets/url-shortener/7.png",
+        "/assets/url-shortener/9.png",
+        "/assets/url-shortener/10.png",
+        "/assets/url-shortener/11.png",
+        "/assets/url-shortener/12.png",
+        "/assets/url-shortener/13.png",
+        "/assets/url-shortener/14.png",
+        "/assets/url-shortener/15.png",
+        "/assets/url-shortener/17.png",
+        "/assets/url-shortener/18.png",
+        "/assets/url-shortener/19.png",
+        "/assets/url-shortener/20.png",
+      ],
+
+      summary:
+        "Designed and deployed a production-style URL shortener platform on AWS, combining Terraform-provisioned infrastructure, Ansible-driven configuration management, and a fully automated GitLab CI/CD pipeline. Built a FastAPI backend with async PostgreSQL and Redis-backed caching, deployed across an Auto Scaling Group behind an Application Load Balancer, with managed RDS and ElastiCache backing the data layer. The CI/CD pipeline authenticates to AWS entirely through GitLab's OpenID Connect identity federation — no long-lived AWS credentials exist anywhere in the system — with a trust policy scoped to a single project and branch. Automated deploys connect to instances exclusively via AWS Systems Manager rather than SSH, and every deployment is verified against the live load balancer before being considered successful. The full observability stack (Prometheus, Grafana, Alertmanager, and custom exporters for both managed data stores) is provisioned entirely as code. Along the way, resolved a GitLab platform-level security control that broke CI identity token issuance due to project path reuse — required reconfiguring the AWS trust policy to match on an immutable project ID rather than a mutable path.",
+
+      features: [
+        "Implemented keyless AWS authentication for CI/CD using GitLab OpenID Connect federation, exchanging short-lived identity tokens for scoped IAM credentials on every pipeline run — no static AWS access keys stored anywhere.",
+        "Built a five-stage GitLab CI/CD pipeline (validate, build, provision, deploy, verify) with Terraform plan/apply as a manual approval gate and fully automated rolling deployment via Ansible.",
+        "Provisioned complete AWS infrastructure using 8 modular Terraform modules covering networking (VPC, NAT, security groups), compute (ASG + ALB), managed data services (RDS PostgreSQL, ElastiCache Redis), container registry (ECR with immutable SHA-tagged images), and CI identity federation.",
+        "Eliminated plaintext database credentials entirely: RDS's master password is generated and owned natively by RDS, and the ElastiCache auth token is stored in Secrets Manager immediately on creation — both fetched at deploy time via instance IAM roles, never passed through CI variables or Ansible playbooks.",
+        "Automated configuration management with 8 Ansible roles driven by a dynamic AWS-tag-based inventory, connecting to EC2 instances via AWS Systems Manager for all CI-driven operations rather than SSH.",
+        "Deployed a FastAPI backend with async SQLAlchemy, Alembic migrations, and a cache-first Redis lookup strategy, validated with an automated pytest suite run against an in-memory database and mocked cache — no live infrastructure required for test execution.",
+        "Built a self-hosted observability stack (Prometheus, Grafana, Alertmanager) provisioned entirely as code, including custom exporters for the managed RDS and ElastiCache services and a version-controlled Grafana dashboard covering application, cache, and database metrics.",
+        "Designed rolling, health-gated deployments — Ansible updates 50% of the Auto Scaling Group at a time and verifies each batch against a live health check before proceeding, so the load balancer never loses all healthy targets during a release.",
+        "Diagnosed and resolved a GitLab platform-level security control that disabled CI identity token issuance due to project path reuse, reconfiguring the AWS trust policy to match on GitLab's immutable project ID instead of its path.",
+        "Hardened the container release process with immutable, commit-SHA-tagged ECR images and vulnerability scanning on push, eliminating ambiguous \"latest\"-tag deployments.",
+      ],
+
+      tech: [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Terraform",
+        "Ansible",
+        "GitLab CI/CD",
+        "Amazon EC2",
+        "Amazon RDS",
+        "Amazon ElastiCache",
+        "Amazon ECR",
+        "AWS ALB",
+        "AWS IAM",
+        "AWS Secrets Manager",
+        "AWS Systems Manager",
+        "Amazon S3",
+        "Prometheus",
+        "Grafana",
+      ],
+
+      links: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/sasunmadhuranga/url-shortener"
+        }
+      ],
+    },
+
+    {
       title: "Production-Grade DevSecOps Pipeline (AWS ECS Fargate + Terraform + GitHub Actions + Five-Gate Security)",
 
       images: [
