@@ -10,6 +10,65 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Self-Service Internal Developer Platform on AWS EKS (Terraform + ArgoCD + GitHub Actions + OPA)",
+
+      images: [
+        "/assets/idp-platform/1.png",
+        "/assets/idp-platform/2.png",
+        "/assets/idp-platform/3.png",
+        "/assets/idp-platform/4.png",
+        "/assets/idp-platform/5.png",
+        "/assets/idp-platform/6.png",
+        "/assets/idp-platform/7.png",
+        "/assets/idp-platform/8.png",
+        "/assets/idp-platform/9.png",
+        "/assets/idp-platform/10.png",
+        "/assets/idp-platform/11.png",
+        "/assets/idp-platform/12.png",
+        "/assets/idp-platform/13.png",
+        "/assets/idp-platform/14.png",
+        "/assets/idp-platform/15.png",
+        "/assets/idp-platform/16.png",
+        "/assets/idp-platform/17.png",
+      ],
+
+      summary:
+        "This project was built to demonstrate platform engineering rather than single-app deployment: a developer receives a governed Kubernetes namespace by opening a pull request containing one YAML file. GitHub Actions validates the request with OPA/Conftest policies and posts a Terraform plan on the PR. On merge, Terraform provisions the namespace with quotas, network isolation and RBAC, and an ArgoCD ApplicationSet picks up the new request and creates a self-healing Application automatically. CI authenticates to AWS through GitHub OIDC with no long-lived credentials, Terraform state is stored remotely with locking, and the EKS cluster is bootstrapped as code so it can be created for a demo and destroyed afterwards. The project also documents the real failures hit while building it.",
+
+      features: [
+        "Built a PR-driven self-service workflow: a developer adds one YAML file (team, environment, CPU/memory quota, owner) and the pipeline handles validation, planning, provisioning and GitOps sync, with no tickets or manual kubectl.",
+        "Enforced guardrails as code with OPA/Conftest: CPU and pod caps, naming rules, a required owner contact, and automated prod requests blocked by default, so self-service never means unlimited resources.",
+        "Created a reusable Terraform module that provisions each namespace with ResourceQuota, LimitRange, default-deny NetworkPolicy with a platform allowlist, a ServiceAccount, and scoped RBAC, driven by a for_each over the request files so adding a team needs no Terraform edits.",
+        "Implemented keyless CI/CD: GitHub Actions assumes a scoped IAM role through OIDC federation on every run. No static AWS keys are stored anywhere.",
+        "Connected Terraform and GitOps with a render step that exports the provisioned resources as plain manifests, committed back by a bot, which an ArgoCD ApplicationSet (Git files generator) turns into one auto-synced, self-healing Application per request.",
+        "Posted the Terraform plan as a PR comment before merge and ran apply only on merge to main, so every infrastructure change is reviewed first.",
+        "Bootstrapped a disposable EKS demo cluster as code (VPC with single NAT, Spot managed node group, ArgoCD via Helm) with its own state, so the cluster can be destroyed without touching namespace state.",
+        "Stored Terraform state in S3 with versioning, encryption, public-access blocking and DynamoDB locking, with one state key per stack.",
+      ],
+
+
+      tech: [
+        "Terraform",
+        "Amazon EKS",
+        "Kubernetes",
+        "ArgoCD",
+        "GitHub Actions",
+        "OPA / Conftest",
+        "AWS IAM (OIDC)",
+        "Amazon S3",
+        "Amazon DynamoDB",
+        "Helm",
+        "Bash",
+      ],
+
+      links: [
+        {
+          name: "GitHub Repository",
+          url: "https://github.com/sasunmadhuranga/idp-platform"
+        }
+      ],
+    },
+    {
       title: "URL Shortener on AWS (Terraform + Ansible + GitLab CI/CD + OIDC-Federated Auth)",
 
       images: [
